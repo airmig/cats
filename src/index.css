@@ -1,0 +1,158 @@
+:root,
+html,
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0px;
+  margin: 0px;
+}
+
+.header {
+  position: fixed;
+  display: block;
+  height: 80px;
+  background-color: rgb(55, 119, 229);
+  width: 100%;
+  color: white;
+  font-size: 2rem;
+  line-height: 80px;
+  padding-left: 15px;
+  z-index: 1000;
+}
+
+a {
+  cursor: hand;
+}
+a:visited {
+  color:rgb(55, 119, 229);
+}
+
+.header img {
+  height: 50px;
+  float: left;
+  margin-right: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.footer {
+  margin-top: 50px;
+  border-top: 1px dotted gray;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 100;
+  color: black;
+  text-align: center;
+  padding:30px;
+}
+
+.mainContent {
+  display: grid;
+  position: relative;
+  color: black;
+  padding-top: 80px;
+  font-weight: 400;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  grid-auto-rows: minmax(auto, auto);
+}
+
+.one {
+  grid-column: 1/4;
+  padding: 10px;
+}
+
+.two {
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.two img {
+  height: 180px;
+}
+
+.three {
+  grid-column: 1/4;
+  padding:10px;
+}
+
+.three select {
+  width: 100%;
+  text-align: center;
+}
+
+.four {
+  grid-column: 2/3;
+  padding: 10px;
+}
+
+.five {
+  grid-column: 2/3;
+  text-align:center;
+  font-size: 1.75rem;
+  margin-top: 25px;
+  border-top: 25px dotted rgb(246, 242, 242);
+}
+
+.meow {
+  margin-top:0px;
+  font-size: 0.75rem;
+}
+
+.meowButton {
+  background-color: rgb(55, 119, 229);;
+  padding:8px;
+  font-size: 1.25rem;
+  color: white;
+  border-radius: 12px;
+  border-color: silver;
+  box-shadow: none;
+  margin-top: 20px;
+}
+
+thead {
+  font-size: 2rem;
+  font-weight: 600;
+  color:white;
+}
+.catImage {
+  object-fit: cover;
+  height: 300px;
+  width: 300px;
+}
+
+.catInformationTable {
+  width:60%;
+  border: 1px solid gainsboro;
+  padding:0px;
+  margin:0 auto;
+  box-shadow: 12px 12px 2px 1px rgba(145, 145, 157, 0.2);
+}
+.catInformationTable thead {
+  background-color: rgb(141, 134, 134);
+}
+.catInformationTable td {
+  padding: 15px;
+}
+
+select {
+  appearance: none; /* Remove default appearance */
+  -webkit-appearance: none; /* For WebKit browsers */
+  -moz-appearance: none; /* For Firefox */
+
+  /* Other styles */
+  padding: 10px;
+  border: 1px solid #9d9494;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+select {
+  /* ... */
+  background-image: url('drop.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 40px 40px;
+}
